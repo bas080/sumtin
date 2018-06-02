@@ -1,0 +1,6 @@
+.nyc_output
+.local.bashrc
+.please
+node_modules
+coverage
+dist
