@@ -1,1 +1,1 @@
-require-run mash ./doc/section/function.md | ./node_modules/.bin/markdown-toc -
+require-run ./doc/section/function.sh | ./node_modules/.bin/markdown-toc -

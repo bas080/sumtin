@@ -20,4 +20,4 @@ reproduce the same "random" values. You can instead pass in your favorite
 psuedorandom function. Maybe the
 [seed-random](https://www.npmjs.com/package/seed-random)'s function.
 
-require ./doc/section/function.md
+require-run ./doc/section/function.sh

@@ -334,4 +334,3 @@ The following node versions are supported.
 - 10
 
 Most of these versions are supported thanks to babel transpile.
-
