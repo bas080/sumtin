@@ -2,6 +2,7 @@
 
 Referentially tranparent random generation functions
 
+- [`something(rand)`](#somethingrand)
 - [`boolean(rand)`](#booleanrand)
 - [`char(rand)`](#charrand)
 - [`date(rand)`](#daterand)
@@ -23,7 +24,7 @@ Referentially tranparent random generation functions
 - [`rangedDate(rand, range = [new Date(-1), new Date(1)])`](#rangeddaterand-range--new-date-1-new-date1)
 - [`rangedInteger(rand, range)`](#rangedintegerrand-range)
 - [`rangedNumber(rand, range = [-1, 1])`](#rangednumberrand-range---1-1)
-- [`sometimes(rand, doFn = v => v, value, ratio = 0.5) `](#sometimesrand-dofn--v--v-value-ratio--05-)
+- [`sometimes(rand, doFn = v => v, value, ratio = 0.5)`](#sometimesrand-dofn--v--v-value-ratio--05)
 
 ## Reasoning
 
@@ -57,6 +58,16 @@ that returns a number between and including 0 and 1. Maybe you want to
 reproduce the same "random" values. You can instead pass in your favorite
 psuedorandom function. Maybe the
 [seed-random](https://www.npmjs.com/package/seed-random)'s function.
+
+
+### `something(rand)`
+
+[`source`](./lib/function/something.js)
+[`tests`](./lib/function//something.spec.js)
+[`edit`](./doc/function/something.md)
+
+Picks a random function and returns a random value from that function
+
 
 ### `boolean(rand)`
 
@@ -117,7 +128,6 @@ You can read more about javascript falsy values over at
 A future date returns a date that has occurred after the now date. The now date
 is created when the module is evaluated. As a result a future can become a date
 from the past if the lifecycle of the application increases.
-
 
 ### `hexadecimalDigit(rand)`
 
@@ -241,7 +251,7 @@ hood it will retry getting a value if the value equals the max value
 
 TBD
 
-### `sometimes(rand, doFn = v => v, value, ratio = 0.5) `
+### `sometimes(rand, doFn = v => v, value, ratio = 0.5)`
 
 [`source`](./lib/function/sometimes.js)
 [`tests`](./lib/function//sometimes.spec.js)

@@ -7,7 +7,7 @@ function will return an object that contains the random generation functions.
 These functions have the random function bound as the first argument.
 
 ```js
-require-run node ./doc/example/bind.js && cat ./doc/example/bind.js
+require-run node ./lib/index.js -- ./doc/example/bind.js && cat ./doc/example/bind.js
 ```
 
 The pick function will always return the first value because the "random"
@@ -20,4 +20,4 @@ reproduce the same "random" values. You can instead pass in your favorite
 psuedorandom function. Maybe the
 [seed-random](https://www.npmjs.com/package/seed-random)'s function.
 
-require-run ./doc/section/function.sh
+require-run ./doc/section/function.js
