@@ -14,8 +14,7 @@ const result = Object.keys(functions)
     const name = fn.name
     const fileName = kebabCase(name)
 
-    if (name !== key)
-      return '' // currently do nothing with aliases
+    if (name !== key) { return '' } // currently do nothing with aliases
 
     return `
 ### \`${functionSignature(fn)}\`
@@ -27,6 +26,6 @@ const result = Object.keys(functions)
 ${fs.readFileSync(`./doc/function/${fileName}.md`)}`
   })
   .filter(Boolean)
-  .join("")
+  .join('')
 
 console.log(result)

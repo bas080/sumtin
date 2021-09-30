@@ -2,30 +2,17 @@
   "name": "sumtin",
   "version": "0.0.0",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "lint": "eslint ./lib/",
-    "build": "babel ./lib --out-dir ./dist",
-    "coverage": "tap ./lib/{**/,}*.spec.js --cov",
-    "test": "tap ./dist/{**/,}*.spec.js",
-    "prepublishOnly": "npm run test -- --100"
+    "test": "npx standard && tap --100",
+    "prepublishOnly": "npm run test"
   },
   "author": "Bas Huis",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "lodash.kebabcase": "^4.1.1",
     "lodash.times": "^4.3.2",
     "markdown-toc": "^1.2.0",
-    "tap": "^12.0.1"
-  },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "eslint": "^4.19.1",
-    "eslint-tap": "^2.0.1"
+    "tap": "^15.0.10"
   }
 }
