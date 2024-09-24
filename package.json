@@ -4,15 +4,12 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "npx standard && tap --100",
+    "test": "npx standard && tap",
     "prepublishOnly": "npm run test"
   },
   "author": "Bas Huis",
   "license": "ISC",
-  "devDependencies": {
-    "lodash.kebabcase": "^4.1.1",
-    "lodash.times": "^4.3.2",
-    "markdown-toc": "^1.2.0",
-    "tap": "^16.0.1"
+  "dependencies": {
+    "tap": "^21.0.1"
   }
 }
