@@ -10,6 +10,6 @@
   "author": "Bas Huis",
   "license": "ISC",
   "dependencies": {
-    "tap": "^21.0.1"
+    "tap": "^21.1.0"
   }
 }
